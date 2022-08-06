@@ -15,8 +15,8 @@ func _to_main_menu():
 func _splash_image():
 	if splash_order >= len(images_list):
 		_to_main_menu()
-	
-	$AnimationPlayer.play('close_curtain')
+	else:
+		$AnimationPlayer.play('close_curtain')
 
 
 func _change_image():
